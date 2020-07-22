@@ -14,7 +14,7 @@ bcrypt = Bcrypt()
 
 
 def productos_blueprints(app):
-    from project.endpoints.ventas import blueprint as productos
+    from project.endpoints.Producto import blueprint as productos
     from project.endpoints.status import blueprint as status
 
     app.register_blueprint(productos)
